@@ -9,14 +9,29 @@ namespace CaesarCipher
     public class Caesar
     {
         private List<char> _plainList;
-        public List<char> _shiftedList;
+        private List<char> _shiftedList;
 
         public Caesar()
         {
-            _plainList = "abcdefghijklmnopqrstuvwxyz".ToList();
+            _plainList = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZß1234567890.,-;:_?=)(/&%$§#+*'~\"!\\ ".ToList();
             _shiftedList = new List<char>();
             GenerateDecryptionList(8);
         }
+
+
+        public string GetEncryptedString(string toEncrypt)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            foreach (var item in Encrypt(toEncrypt))
+            {
+                sb.Append(item);
+            }
+
+            return sb.ToString();
+        }
+
+
 
 
         private List<char> Encrypt(string toEncrypt)
@@ -24,13 +39,13 @@ namespace CaesarCipher
             List<char> encryptionList = new List<char>();
             List<char> plainList = toEncrypt.ToList();
 
+            int position;
 
             foreach (var item in plainList)
             {
-
+                position = _plainList.IndexOf(item);
+                encryptionList.Add(_shiftedList[position]);
             }
-
-
 
             return encryptionList;
         }
