@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FizzBuzz
 {
-    class FizzBuzzHandler
+    public class FizzBuzzHandler
     {
         private NumberGenerator _numberGenerator;
 

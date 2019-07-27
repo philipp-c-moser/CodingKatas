@@ -8,5 +8,8 @@ namespace FizzBuzz.Test
     [TestFixture]
     class FizzBuzzHandlerTests
     {
+        private FizzBuzzHandler _fizzBuzzHandler;
+
+
     }
 }
