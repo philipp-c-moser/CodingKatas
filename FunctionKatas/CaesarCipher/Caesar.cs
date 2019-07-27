@@ -19,6 +19,21 @@ namespace CaesarCipher
         }
 
 
+        private List<char> Encrypt(string toEncrypt)
+        {
+            List<char> encryptionList = new List<char>();
+            List<char> plainList = toEncrypt.ToList();
+
+
+            foreach (var item in plainList)
+            {
+
+            }
+
+
+
+            return encryptionList;
+        }
 
 
 
