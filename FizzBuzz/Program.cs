@@ -6,7 +6,11 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("FizzBuzz - FunctionKata");
+
+            Console.WriteLine("Please enter the amount of numbers, you want to generate:");
+
+
         }
     }
 }
