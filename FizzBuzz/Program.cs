@@ -10,6 +10,10 @@ namespace FizzBuzz
 
             Console.WriteLine("Please enter the amount of numbers, you want to generate:");
 
+            var amountOfNumbers = Convert.ToInt32(Console.ReadLine());
+
+
+            Console.ReadKey();
 
         }
     }
