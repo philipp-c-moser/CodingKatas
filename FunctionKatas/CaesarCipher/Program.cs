@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace CaesarCipher
 {
@@ -6,7 +7,17 @@ namespace CaesarCipher
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Caesar caesar = new Caesar();
+
+            Console.WriteLine("Caesar Cipher - Function Kata");
+
+            Console.WriteLine("Welche Zeichenkette möchten Sie verschlüsseln?");
+
+            var input = Console.ReadLine();
+
+
+
+            Console.ReadKey();
         }
     }
 }
