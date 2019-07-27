@@ -19,11 +19,12 @@ namespace CaesarCipher
         }
 
 
+        // TODO: Refactor and use Delegates?
         public string GetEncryptedString(string toEncrypt)
         {
             StringBuilder sb = new StringBuilder();
 
-            foreach (var item in Encrypt(toEncrypt))
+            foreach (var item in ProceedEncoding(toEncrypt, _plainList, _shiftedList))
             {
                 sb.Append(item);
             }
@@ -31,11 +32,12 @@ namespace CaesarCipher
             return sb.ToString();
         }
 
+        // TODO: Refactor and use Delegates?
         public string GetDecryptedString(string toDecrypt)
         {
             StringBuilder sb = new StringBuilder();
 
-            foreach (var item in Decrypt(toDecrypt))
+            foreach (var item in ProceedEncoding(toDecrypt, _shiftedList, _plainList))
             {
                 sb.Append(item);
             }
@@ -45,38 +47,22 @@ namespace CaesarCipher
 
 
 
+    
 
-        private List<char> Encrypt(string toEncrypt)
+        private List<char> ProceedEncoding(string toEncode, List<char> positionList, List<char> proceedList)
         {
-            List<char> encryptionList = new List<char>();
-            List<char> plainList = toEncrypt.ToList();
+            List<char> returnList = new List<char>();
+            List<char> encodingList = toEncode.ToList();
 
             int position;
 
-            foreach (var item in plainList)
+            foreach (var item in encodingList)
             {
-                position = _plainList.IndexOf(item);
-                encryptionList.Add(_shiftedList[position]);
+                position = positionList.IndexOf(item);
+                returnList.Add(proceedList[position]);
             }
 
-            return encryptionList;
-        }
-
-
-        private List<char> Decrypt(string toDecrypt)
-        {
-            List<char> plainList = new List<char>();
-            List<char> encryptedList = toDecrypt.ToList();
-
-            int position;
-
-            foreach (var item in encryptedList)
-            {
-                position = _shiftedList.IndexOf(item);
-                plainList.Add(_plainList[position]);
-            }
-
-            return plainList;
+            return returnList;
         }
 
 
