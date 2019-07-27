@@ -31,6 +31,18 @@ namespace CaesarCipher
             return sb.ToString();
         }
 
+        public string GetDecryptedString(string toDecrypt)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            foreach (var item in Decrypt(toDecrypt))
+            {
+                sb.Append(item);
+            }
+
+            return sb.ToString();
+        }
+
 
 
 
@@ -48,6 +60,23 @@ namespace CaesarCipher
             }
 
             return encryptionList;
+        }
+
+
+        private List<char> Decrypt(string toDecrypt)
+        {
+            List<char> plainList = new List<char>();
+            List<char> encryptedList = toDecrypt.ToList();
+
+            int position;
+
+            foreach (var item in encryptedList)
+            {
+                position = _shiftedList.IndexOf(item);
+                plainList.Add(_plainList[position]);
+            }
+
+            return plainList;
         }
 
 
