@@ -5,6 +5,12 @@ VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{B02848B4-7062-4A75-B6B3-8505D8FE63EF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FunctionKatas", "FunctionKatas", "{9FB8CE6C-CCE8-4C15-B29D-9877382E7F43}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClassKatas", "ClassKatas", "{986B03BF-2C45-4C87-8152-265E034A4A4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FizzBuzz", "FizzBuzz", "{AAFEB604-6387-4031-AADA-66A976C174BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +24,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B02848B4-7062-4A75-B6B3-8505D8FE63EF} = {AAFEB604-6387-4031-AADA-66A976C174BA}
+		{AAFEB604-6387-4031-AADA-66A976C174BA} = {9FB8CE6C-CCE8-4C15-B29D-9877382E7F43}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {69D8148B-3850-4A70-A59C-2A3BC856F568}
