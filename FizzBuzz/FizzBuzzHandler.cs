@@ -7,7 +7,17 @@ namespace FizzBuzz
     class FizzBuzzHandler
     {
 
-        public string ConvertNumberToFizzBuzz(int number)
+        public List<string> StartFizzBuzz(int amount)
+        {
+            List<string> fizzBuzzString = new List<string>();
+
+
+
+            return fizzBuzzString;
+        }
+
+
+        private string ConvertNumberToFizzBuzz(int number)
         {
             if (IsNumberDivisibleByThree(number) && IsNumberDivisibleByFive(number)) return "FizzBuzz";
             if (IsNumberDivisibleByThree(number)) return "Fizz";
