@@ -26,5 +26,62 @@ namespace FizzBuzz.Test
         }
 
 
+
+
+
+        [Test]
+        public void IsNumberDivisibleByThree_WhenPassNumberDivisbleByThree_ReturnTrue()
+        {
+
+            var result = _fizzBuzzHandler.IsNumberDivisibleByThree(_numberDivisibleByThree);
+
+            Assert.That(result, Is.True);
+
+        }
+
+        [Test]
+        public void IsNumberDivisibleByThree_WhenPassNumberNotDivisbleByThree_ReturnFalse()
+        {
+
+            var result = _fizzBuzzHandler.IsNumberDivisibleByThree(_numberDivisibleByFive);
+
+            Assert.That(result, Is.False);
+
+        }
+
+
+        [Test]
+        public void IsNumberDivisibleByFive_WhenPassNumberDivisbleByFive_ReturnTrue()
+        {
+
+            var result = _fizzBuzzHandler.IsNumberDivisibleByFive(_numberDivisibleByFive);
+
+            Assert.That(result, Is.True);
+
+        }
+
+        [Test]
+        public void IsNumberDivisibleByThree_WhenPassNumberNotDivisbleByFive_ReturnFalse()
+        {
+
+            var result = _fizzBuzzHandler.IsNumberDivisibleByFive(_numberDivisibleByThree);
+
+            Assert.That(result, Is.False);
+
+        }
+
+
+        [Test]
+        public void IsNumberDivisibleByThreeAndFive_WhenPassNumberDivisbleByThreeAndFive_ReturnTrue()
+        {
+
+            var result = _fizzBuzzHandler.IsNumberDivisibleByFive(_numberDivisibleByThreeAndFive) &&
+                         _fizzBuzzHandler.IsNumberDivisibleByFive(_numberDivisibleByThreeAndFive);
+
+            Assert.That(result, Is.True);
+
+        }
+
+
     }
 }
