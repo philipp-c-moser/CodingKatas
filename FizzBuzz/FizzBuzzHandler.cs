@@ -37,12 +37,12 @@ namespace FizzBuzz
 
 
 
-        private bool IsNumberDivisibleByThree(int number)
+        public bool IsNumberDivisibleByThree(int number)
         {
             return number % 3 == 0;
         }
 
-        private bool IsNumberDivisibleByFive(int number)
+        public bool IsNumberDivisibleByFive(int number)
         {
             return number % 5 == 0;
         }
