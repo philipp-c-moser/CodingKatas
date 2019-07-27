@@ -15,7 +15,7 @@ namespace CaesarCipher
 
             var input = Console.ReadLine();
 
-
+            Console.WriteLine(caesar.GetEncryptedString(input));
 
             Console.ReadKey();
         }
