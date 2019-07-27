@@ -11,11 +11,11 @@ namespace CaesarCipher
         private List<char> _plainList;
         private List<char> _shiftedList;
 
-        public Caesar()
+        public Caesar(int shifting)
         {
             _plainList = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZß1234567890.,-;:_?=)(/&%$§#+*'~\"!\\ ".ToList();
             _shiftedList = new List<char>();
-            GenerateDecryptionList(8);
+            GenerateDecryptionList(shifting);
         }
 
 

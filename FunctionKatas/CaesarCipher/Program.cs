@@ -7,7 +7,7 @@ namespace CaesarCipher
     {
         static void Main(string[] args)
         {
-            Caesar caesar = new Caesar();
+            Caesar caesar = new Caesar(15);
 
             Console.WriteLine("Caesar Cipher - Function Kata");
 
