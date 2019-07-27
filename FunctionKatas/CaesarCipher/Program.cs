@@ -14,8 +14,10 @@ namespace CaesarCipher
             Console.WriteLine("Welche Zeichenkette möchten Sie verschlüsseln?");
 
             var input = Console.ReadLine();
+            var encrypted = caesar.GetEncryptedString(input);
 
-            Console.WriteLine(caesar.GetEncryptedString(input));
+            Console.WriteLine("Encrypted: " + encrypted);
+            Console.WriteLine("Decrypted: " + caesar.GetDecryptedString(encrypted));
 
             Console.ReadKey();
         }
