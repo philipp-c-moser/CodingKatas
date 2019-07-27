@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FunctionKatas\F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FizzBuzz", "FizzBuzz", "{6FECFEE2-8EAE-4C72-AF95-6D028CFE9A3D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseWords.Test", "TestProjects\ReverseWords.Test\ReverseWords.Test.csproj", "{239ECBBE-3597-4825-8BD1-F29E3171AE77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{AB154528-22AE-459A-9734-817B636B001C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB154528-22AE-459A-9734-817B636B001C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB154528-22AE-459A-9734-817B636B001C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{239ECBBE-3597-4825-8BD1-F29E3171AE77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{239ECBBE-3597-4825-8BD1-F29E3171AE77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{239ECBBE-3597-4825-8BD1-F29E3171AE77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{239ECBBE-3597-4825-8BD1-F29E3171AE77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +51,7 @@ Global
 		{F75A3B0D-965D-43D4-BDB2-0A8DA6A7E25B} = {9FB8CE6C-CCE8-4C15-B29D-9877382E7F43}
 		{AB154528-22AE-459A-9734-817B636B001C} = {6FECFEE2-8EAE-4C72-AF95-6D028CFE9A3D}
 		{6FECFEE2-8EAE-4C72-AF95-6D028CFE9A3D} = {9FB8CE6C-CCE8-4C15-B29D-9877382E7F43}
+		{239ECBBE-3597-4825-8BD1-F29E3171AE77} = {F75A3B0D-965D-43D4-BDB2-0A8DA6A7E25B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {69D8148B-3850-4A70-A59C-2A3BC856F568}
