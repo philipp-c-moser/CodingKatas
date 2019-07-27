@@ -6,12 +6,21 @@ namespace FizzBuzz
 {
     class FizzBuzzHandler
     {
+        private NumberGenerator _numberGenerator;
+
+        public FizzBuzzHandler()
+        {
+            _numberGenerator = new NumberGenerator();
+        }
 
         public List<string> StartFizzBuzz(int amount)
         {
             List<string> fizzBuzzString = new List<string>();
 
-
+            foreach (var number in _numberGenerator.GenerateNumbers(amount))
+            {
+                fizzBuzzString.Add(ConvertNumberToFizzBuzz(number));
+            }
 
             return fizzBuzzString;
         }
