@@ -7,13 +7,13 @@ namespace Galgenmaennchen
     public class Galgenmaennchen
     {
 
-        private string _searchedWord;
+        private readonly string _searchedWord;
         private int _rounds;
         private List<string> _guessWord;
 
         public Galgenmaennchen(string searchedWord)
         {
-            this._searchedWord = searchedWord;
+            _searchedWord = searchedWord;
             _guessWord = new List<string>();
             _rounds = 0;
 
@@ -64,22 +64,16 @@ namespace Galgenmaennchen
         private bool IsSolved()
         {
             // TODO: If GuessWord does have a "-" to guess, the Galgenmaennchen will never be solved!
-            if (_guessWord.IndexOf("-") == -1)
-            {
-                return true;
-            }
-
-
-            return false;
+            return _guessWord.IndexOf("-") == -1;
         }
 
 
         private List<int> GetAllPositionsOfLetter(string letter)
         {
-            List<int> positions = new List<int>();
+            var positions = new List<int>();
 
 
-            for (int i = 0; i < _searchedWord.Length; i++)
+            for (var i = 0; i < _searchedWord.Length; i++)
             {
                 if (_searchedWord.Substring(i, 1) == letter)
                 {
@@ -93,7 +87,7 @@ namespace Galgenmaennchen
 
         private string GenerateStringFromGuessedWord()
         {
-            StringBuilder sb = new StringBuilder();
+            var sb = new StringBuilder();
 
             foreach (var letter in _guessWord)
             {
