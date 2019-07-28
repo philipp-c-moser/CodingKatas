@@ -6,5 +6,42 @@ namespace Tannenbaum
 {
     class Tannenbaum
     {
+        private List<string> _tannenbaumList;
+
+        public Tannenbaum()
+        {
+            _tannenbaumList = new List<string>();
+        }
+
+
+        public void PrintTannenbaum(int amountOfRows)
+        {
+            AddRowsToList(amountOfRows);
+
+            foreach (var item in _tannenbaumList)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+
+        private void AddRowsToList(int amountOfRows)
+        {
+            for (var i = 1; i <= amountOfRows; i++)
+            {
+                var sbSign = new StringBuilder();
+
+                for (var j = 1; j <= i; j++)
+                {
+                    sbSign.Append("X");
+                }
+
+                _tannenbaumList.Add(sbSign.ToString());
+
+            }
+        }
+
+
+
     }
 }
