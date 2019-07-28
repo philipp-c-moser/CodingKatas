@@ -22,7 +22,7 @@ namespace CaesarCipher
         // TODO: Refactor and use Delegates?
         public string GetEncryptedString(string toEncrypt)
         {
-            StringBuilder sb = new StringBuilder();
+            var sb = new StringBuilder();
 
             foreach (var item in ProceedEncoding(toEncrypt, _plainList, _shiftedList))
             {
@@ -35,7 +35,7 @@ namespace CaesarCipher
         // TODO: Refactor and use Delegates?
         public string GetDecryptedString(string toDecrypt)
         {
-            StringBuilder sb = new StringBuilder();
+            var sb = new StringBuilder();
 
             foreach (var item in ProceedEncoding(toDecrypt, _shiftedList, _plainList))
             {
@@ -49,16 +49,14 @@ namespace CaesarCipher
 
     
 
-        private List<char> ProceedEncoding(string toEncode, List<char> positionList, List<char> proceedList)
+        private List<char> ProceedEncoding(string toEncode, IList<char> positionList, IList<char> proceedList)
         {
-            List<char> returnList = new List<char>();
-            List<char> encodingList = toEncode.ToList();
-
-            int position;
+            var returnList = new List<char>();
+            var encodingList = toEncode.ToList();
 
             foreach (var item in encodingList)
             {
-                position = positionList.IndexOf(item);
+                var position = positionList.IndexOf(item);
                 returnList.Add(proceedList[position]);
             }
 
@@ -70,12 +68,12 @@ namespace CaesarCipher
         private void GenerateDecryptionList(int shifting)
         {
 
-            for (int i = 0; i < (_plainList.Count - shifting); i++)
+            for (var i = 0; i < (_plainList.Count - shifting); i++)
             {
                 _shiftedList.Add(_plainList[i + shifting]);
             }
 
-            for (int j = 0; j < shifting; j++)
+            for (var j = 0; j < shifting; j++)
             {
                 _shiftedList.Add(_plainList[j]);
             }
