@@ -9,8 +9,10 @@ namespace Tannenbaum
             Tannenbaum tannenbaum = new Tannenbaum();
 
             Console.WriteLine("Tannenbaum - Function Kata");
+            Console.WriteLine("Bitte gibt die Anzahl der Reihen an:");
+            var input = Convert.ToInt32(Console.ReadLine());
 
-            tannenbaum.PrintTannenbaum(5);
+            tannenbaum.PrintTannenbaum(input);
 
 
 

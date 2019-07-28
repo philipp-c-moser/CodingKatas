@@ -25,6 +25,7 @@ namespace Tannenbaum
         }
 
 
+        // TODO: Add Spacing in front of the Signs
         private void AddRowsToList(int amountOfRows)
         {
             for (var i = 1; i <= amountOfRows; i++)
