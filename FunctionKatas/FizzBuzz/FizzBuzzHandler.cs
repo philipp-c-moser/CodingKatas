@@ -15,7 +15,7 @@ namespace FizzBuzz
 
         public List<string> StartFizzBuzz(int amount)
         {
-            List<string> fizzBuzzString = new List<string>();
+            var fizzBuzzString = new List<string>();
 
             foreach (var number in _numberGenerator.GenerateNumbers(amount))
             {
