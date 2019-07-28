@@ -25,19 +25,24 @@ namespace Tannenbaum
         }
 
 
-        // TODO: Add Spacing in front of the Signs
         private void AddRowsToList(int amountOfRows)
         {
             for (var i = 1; i <= amountOfRows; i++)
             {
+                var sbSpace = new StringBuilder();
                 var sbSign = new StringBuilder();
 
-                for (var j = 1; j <= i; j++)
+                for (var j = (amountOfRows - (i / 2)); j >= 1; j--)
+                {
+                    sbSpace.Append(" ");
+                }
+
+                for (var k = 1; k <= i; k++)
                 {
                     sbSign.Append("X");
                 }
 
-                _tannenbaumList.Add(sbSign.ToString());
+                _tannenbaumList.Add(sbSpace.ToString() + sbSign.ToString());
 
             }
         }
