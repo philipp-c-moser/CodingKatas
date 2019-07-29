@@ -28,5 +28,13 @@ namespace FizzBuzz.Test
 
         }
 
+        [Test]
+        public void GenerateNumbers_Passsed100_ReturnUniqueNumbers()
+        {
+            var result = _numberGenerator.GenerateNumbers(100);
+
+            Assert.That(result, Is.Unique);
+        }
+
     }
 }
