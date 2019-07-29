@@ -16,11 +16,22 @@ namespace RussischeBauernmultiplikation
 
             var valuesToSumUp = 0;
 
-         
+            do
+            {
+                if (factor1 % 2 != 0)
+                {
+                    valuesToSumUp = valuesToSumUp + factor2;
+                }
 
-            return 1;
+                factor1 = factor1 / 2;
+                factor2 = factor2 * 2;
 
+            } while (factor1 >= 1);
+
+            return valuesToSumUp;
         }
 
     }
 }
+
+
