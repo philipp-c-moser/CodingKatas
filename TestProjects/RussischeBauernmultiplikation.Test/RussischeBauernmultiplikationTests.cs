@@ -36,6 +36,27 @@ namespace RussischeBauernmultiplikation.Test
 
 
 
+        [Test]
+        public void Multiplicate_SameValue_ReturnCorrectFactor()
+        {
+            var result = _russischeBauernmultiplikation.Multiplicate(100, 100);
+
+            Assert.That(result, Is.EqualTo(10000));
+        }
+
+
+        [Test]
+        public void Multiplicate_OneWithOne_ReturnOne()
+        {
+            var result = _russischeBauernmultiplikation.Multiplicate(1, 1);
+
+            Assert.That(result, Is.EqualTo(1));
+        }
+
+
+
+
+
 
     }
 }
