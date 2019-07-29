@@ -26,7 +26,7 @@ namespace FizzBuzz
         }
 
 
-        private string ConvertNumberToFizzBuzz(int number)
+        public string ConvertNumberToFizzBuzz(int number)
         {
             if (IsNumberDivisibleByThree(number) && IsNumberDivisibleByFive(number)) return "FizzBuzz";
             if (IsNumberDivisibleByThree(number)) return "Fizz";
