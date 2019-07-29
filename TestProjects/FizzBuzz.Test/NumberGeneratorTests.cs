@@ -8,8 +8,13 @@ namespace FizzBuzz.Test
     [TestFixture]
     class NumberGeneratorTests
     {
+        private NumberGenerator _numberGenerator;
 
-
+        [SetUp]
+        public void SetUp()
+        {
+            _numberGenerator = new NumberGenerator();
+        }
 
 
 
