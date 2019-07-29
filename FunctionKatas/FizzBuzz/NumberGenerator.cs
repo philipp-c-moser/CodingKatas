@@ -5,7 +5,7 @@ using System.Text;
 
 namespace FizzBuzz
 {
-    internal class NumberGenerator
+    public class NumberGenerator
     {
 
         public IEnumerable<int> GenerateNumbers(int amount)
