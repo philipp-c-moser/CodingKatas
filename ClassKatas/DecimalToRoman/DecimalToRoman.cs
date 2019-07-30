@@ -24,6 +24,19 @@ namespace DecimalToRoman
         }
 
 
+        public string ConvertDecimalToRoman(int number)
+        {
+            var romanNumber = new StringBuilder();
+
+
+
+
+
+
+            return romanNumber.ToString();
+        }
+
+
 
     }
 }
