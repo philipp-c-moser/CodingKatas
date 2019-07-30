@@ -8,6 +8,10 @@ namespace ConfigToDictionary
         {
             Console.WriteLine("Configuration to Dictionary - Function Kata");
 
+            Console.WriteLine("Bitte geben Sie Ihr Konfigurationsfile ein");
+
+            var input = Console.ReadLine();
+
 
 
             Console.ReadKey();
