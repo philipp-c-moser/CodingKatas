@@ -8,6 +8,18 @@ namespace ConfigToDictionary
     public class ConfigToDictionary
     {
 
+        public string ToString(string configuration)
+        {
+            var sb = new StringBuilder();
+
+            foreach (var setting in ToDictionary(configuration))
+            {
+                sb.Append($"Key: {setting.Key} | Value: {setting.Value}\n");
+            }
+
+            return sb.ToString();
+        }
+
         public IDictionary<string, string> ToDictionary(string configuration)
         {
             return SplitIntoKeyValuePairs(SplitSettings(configuration));
