@@ -6,7 +6,11 @@ namespace ConfigToDictionary
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Configuration to Dictionary - Function Kata");
+
+
+
+            Console.ReadKey();
         }
     }
 }
