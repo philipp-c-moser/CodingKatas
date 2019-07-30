@@ -9,13 +9,13 @@ namespace DecimalToRoman
 
         private readonly Dictionary<int, char> _numbers = new Dictionary<int, char>
         {
-            { 1, 'I' },
-            { 5, 'V' },
-            { 10, 'X' },
-            { 50, 'L' },
-            { 100, 'C' },
+            { 1000, 'M' },
             { 500, 'D' },
-            { 1000, 'M' }
+            { 100, 'C' },
+            { 50, 'L' },
+            { 10, 'X' },
+            { 5, 'V' },
+            { 1, 'I' }
         };
 
         public DecimalToRoman()
