@@ -37,11 +37,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WordWrap", "FunctionKatas\W
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WordWrap", "WordWrap", "{009E17B2-ECA8-46E1-85FB-1F55D881BF2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RussischeBauernmultiplikation", "FunctionKatas\RussischeBauernmultiplikation\RussischeBauernmultiplikation.csproj", "{34CD1A8B-AE8F-4C0D-A01A-29D222E00E62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RussischeBauernmultiplikation", "FunctionKatas\RussischeBauernmultiplikation\RussischeBauernmultiplikation.csproj", "{34CD1A8B-AE8F-4C0D-A01A-29D222E00E62}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RussischeBauernmultiplikation", "RussischeBauernmultiplikation", "{E1EF3860-F08F-4121-9CFA-B45237BB37C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RussischeBauernmultiplikation.Test", "TestProjects\RussischeBauernmultiplikation.Test\RussischeBauernmultiplikation.Test.csproj", "{09074527-21DA-411D-909A-D85133CB36F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RussischeBauernmultiplikation.Test", "TestProjects\RussischeBauernmultiplikation.Test\RussischeBauernmultiplikation.Test.csproj", "{09074527-21DA-411D-909A-D85133CB36F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecimalToRoman", "ClassKatas\DecimalToRoman\DecimalToRoman.csproj", "{ABB4834D-8E39-4E1C-B9FE-311793683054}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DecimalToRoman", "DecimalToRoman", "{6C80FEBF-89C3-4061-875F-8891F6848C02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +97,10 @@ Global
 		{09074527-21DA-411D-909A-D85133CB36F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09074527-21DA-411D-909A-D85133CB36F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09074527-21DA-411D-909A-D85133CB36F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABB4834D-8E39-4E1C-B9FE-311793683054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB4834D-8E39-4E1C-B9FE-311793683054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB4834D-8E39-4E1C-B9FE-311793683054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB4834D-8E39-4E1C-B9FE-311793683054}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -116,6 +124,8 @@ Global
 		{34CD1A8B-AE8F-4C0D-A01A-29D222E00E62} = {E1EF3860-F08F-4121-9CFA-B45237BB37C5}
 		{E1EF3860-F08F-4121-9CFA-B45237BB37C5} = {9FB8CE6C-CCE8-4C15-B29D-9877382E7F43}
 		{09074527-21DA-411D-909A-D85133CB36F6} = {E1EF3860-F08F-4121-9CFA-B45237BB37C5}
+		{ABB4834D-8E39-4E1C-B9FE-311793683054} = {6C80FEBF-89C3-4061-875F-8891F6848C02}
+		{6C80FEBF-89C3-4061-875F-8891F6848C02} = {986B03BF-2C45-4C87-8152-265E034A4A4E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {69D8148B-3850-4A70-A59C-2A3BC856F568}
