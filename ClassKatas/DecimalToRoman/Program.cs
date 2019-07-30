@@ -6,7 +6,11 @@ namespace DecimalToRoman
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Decimal to Roman - Class Kata");
+
+
+
+            Console.ReadKey();
         }
     }
 }
