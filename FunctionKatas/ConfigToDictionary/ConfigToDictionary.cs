@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace ConfigToDictionary
@@ -7,6 +8,10 @@ namespace ConfigToDictionary
     public class ConfigToDictionary
     {
 
+        public IDictionary<string, string> ToDictionary(string configuration)
+        {
+            return SplitIntoKeyValuePairs(SplitSettings(configuration));
+        }
 
 
         private IEnumerable<string> SplitSettings(string configuration)
@@ -18,8 +23,14 @@ namespace ConfigToDictionary
 
         private IDictionary<string, string> SplitIntoKeyValuePairs(IEnumerable<string> settings)
         {
+            
             var keyValuePairs = new Dictionary<string, string>();
 
+            foreach (var setting in settings)
+            {
+                var splittedSetting = setting.Split("=");
+                keyValuePairs.Add(splittedSetting[0].ToString(), splittedSetting[1].ToString());
+            }
 
             return keyValuePairs;
         }
