@@ -13,7 +13,7 @@ namespace FizzBuzz
             _numberGenerator = new NumberGenerator();
         }
 
-        public List<string> StartFizzBuzz(int amount)
+        public List<string> ConvertNumbersToFizzBuzz(int amount)
         {
             var fizzBuzzString = new List<string>();
 

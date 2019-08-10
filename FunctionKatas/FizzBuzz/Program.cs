@@ -10,7 +10,7 @@ namespace FizzBuzz
             
             var amount = Convert.ToInt32(Console.ReadLine());
 
-            var fizzBuzzString = fizzBuzz.StartFizzBuzz(amount);
+            var fizzBuzzString = fizzBuzz.ConvertNumbersToFizzBuzz(amount);
 
 
             foreach (var item in fizzBuzzString)
