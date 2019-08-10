@@ -6,7 +6,7 @@ using NUnit.Framework;
 namespace FizzBuzz.Test
 {
     [TestFixture]
-    class FizzBuzzHandlerTests
+    class FizzBuzzTests
     {
 
         private FizzBuzz _fizzBuzz;
