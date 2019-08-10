@@ -28,9 +28,20 @@ namespace FizzBuzz
 
         public string ConvertNumberToFizzBuzz(int number)
         {
-            if (IsFizzBuzz(number)) return "FizzBuzz";
-            if (IsFizz(number)) return "Fizz";
-            if (IsBuzz(number)) return "Buzz";
+            if (IsFizzBuzz(number))
+            {
+                return "FizzBuzz";
+            }
+
+            if (IsFizz(number))
+            {
+                return "Fizz";
+            }
+
+            if (IsBuzz(number))
+            {
+                return "Buzz";
+            }
 
             return Convert.ToString(number);
         }
