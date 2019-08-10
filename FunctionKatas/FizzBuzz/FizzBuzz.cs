@@ -43,17 +43,17 @@ namespace FizzBuzz
 
 
 
-        public bool IsFizz(int number)
+        private bool IsFizz(int number)
         {
             return number % 3 == 0;
         }
 
-        public bool IsBuzz(int number)
+        private bool IsBuzz(int number)
         {
             return number % 5 == 0;
         }
 
-        public bool IsFizzBuzz(int number)
+        private bool IsFizzBuzz(int number)
         {
             return IsFizz(number) && IsBuzz(number);
         }
