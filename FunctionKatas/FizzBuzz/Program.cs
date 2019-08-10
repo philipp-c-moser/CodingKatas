@@ -6,26 +6,16 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
-            FizzBuzzHandler fizzBuzzHandler = new FizzBuzzHandler();
+            
 
-            Console.WriteLine("FizzBuzz - FunctionKata");
-
-            Console.WriteLine("Please enter the amount of numbers, you want to generate:");
-
-            var amount = Convert.ToInt32(Console.ReadLine());
+            var fizzBuzzString = FizzBuzz.ConvertNumbersToFizzBuzz();
 
 
-
-            var fizzBuzzString = fizzBuzzHandler.StartFizzBuzz(amount);
-
-            foreach (var fizzBuzz in fizzBuzzString)
+            foreach (var item in fizzBuzzString)
             {
-                Console.WriteLine(fizzBuzz);
+                Console.WriteLine(item);
             }
 
-
-
-            Console.ReadKey();
 
         }
     }
