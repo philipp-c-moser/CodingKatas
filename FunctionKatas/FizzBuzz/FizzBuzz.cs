@@ -4,11 +4,11 @@ using System.Text;
 
 namespace FizzBuzz
 {
-    public class FizzBuzz
+    public static class FizzBuzz
     {
         
 
-        public List<string> ConvertNumbersToFizzBuzz()
+        public static List<string> ConvertNumbersToFizzBuzz()
         {
             var fizzBuzzString = new List<string>();
 
@@ -21,7 +21,7 @@ namespace FizzBuzz
         }
 
 
-        public string ConvertNumberToFizzBuzz(int number)
+        public static string ConvertNumberToFizzBuzz(int number)
         {
             if (IsFizzBuzz(number))
             {
@@ -43,17 +43,17 @@ namespace FizzBuzz
 
 
 
-        private bool IsFizz(int number)
+        private static bool IsFizz(int number)
         {
             return number % 3 == 0;
         }
 
-        private bool IsBuzz(int number)
+        private static bool IsBuzz(int number)
         {
             return number % 5 == 0;
         }
 
-        private bool IsFizzBuzz(int number)
+        private static bool IsFizzBuzz(int number)
         {
             return IsFizz(number) && IsBuzz(number);
         }

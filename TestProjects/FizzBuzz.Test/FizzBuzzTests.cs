@@ -9,20 +9,10 @@ namespace FizzBuzz.Test
     class FizzBuzzTests
     {
 
-        private FizzBuzz _fizzBuzz;
-
-        [SetUp]
-        public void SetUp()
-        {
-            _fizzBuzz = new FizzBuzz();
-        }
-        
-
-
         [Test]
         public void ConvertNumberToFizzBuzz_PassNumberDivisibleByThree_ReturnFizz()
         {
-            var result = _fizzBuzz.ConvertNumberToFizzBuzz(27);
+            var result = FizzBuzz.ConvertNumberToFizzBuzz(27);
 
             Assert.That(result, Is.EqualTo("Fizz"));
         }
@@ -30,7 +20,7 @@ namespace FizzBuzz.Test
         [Test]
         public void ConvertNumberToFizzBuzz_PassNumberDivisibleByFive_ReturnBuzz()
         {
-            var result = _fizzBuzz.ConvertNumberToFizzBuzz(25);
+            var result = FizzBuzz.ConvertNumberToFizzBuzz(25);
 
             Assert.That(result, Is.EqualTo("Buzz"));
         }
@@ -38,7 +28,7 @@ namespace FizzBuzz.Test
         [Test]
         public void ConvertNumberToFizzBuzz_PassNumberDivisibleByThreeAndFive_ReturnFizzBuzz()
         {
-            var result = _fizzBuzz.ConvertNumberToFizzBuzz(30);
+            var result = FizzBuzz.ConvertNumberToFizzBuzz(30);
 
             Assert.That(result, Is.EqualTo("FizzBuzz"));
         }
@@ -46,7 +36,7 @@ namespace FizzBuzz.Test
         [Test]
         public void ConvertNumberToFizzBuzz_PassNumberNotDivisibleByThreeAndFive_ReturnNumberAsString()
         {
-            var result = _fizzBuzz.ConvertNumberToFizzBuzz(11);
+            var result = FizzBuzz.ConvertNumberToFizzBuzz(11);
 
             Assert.That(result, Is.EqualTo("11"));
         }

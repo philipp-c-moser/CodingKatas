@@ -6,10 +6,9 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
-            FizzBuzz fizzBuzz = new FizzBuzz();
             
 
-            var fizzBuzzString = fizzBuzz.ConvertNumbersToFizzBuzz();
+            var fizzBuzzString = FizzBuzz.ConvertNumbersToFizzBuzz();
 
 
             foreach (var item in fizzBuzzString)
