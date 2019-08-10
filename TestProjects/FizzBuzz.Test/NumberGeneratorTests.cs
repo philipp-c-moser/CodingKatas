@@ -10,19 +10,29 @@ namespace FizzBuzz.Test
     class NumberGeneratorTests
     {
         [Test]
-        public void GenerateNumbers_Passed100_Return100Numbers()
+        public void GenerateNumbers_WhenCalled_ReturnCorrectList()
         {
-            var result = NumberGenerator.GenerateNumbers(100);
+            var result = NumberGenerator.GenerateNumbers();
+            var assertion = Enumerable.Range(1, 100);
 
             Assert.That(result, Is.Not.Null);
-            Assert.That(result.Count(), Is.EqualTo(100));
+            Assert.That(result, Is.EqualTo(assertion));
 
         }
 
         [Test]
-        public void GenerateNumbers_Passsed100_ReturnUniqueNumbers()
+        public void GenerateNumbers_WhenCalled_Return100Numbers()
         {
-            var result = NumberGenerator.GenerateNumbers(100);
+            var result = NumberGenerator.GenerateNumbers();
+            var assertion = Enumerable.Range(1, 100);
+
+            Assert.That(result.Count, Is.EqualTo(assertion.Count()));
+        }
+
+        [Test]
+        public void GenerateNumbers_WhenCalled_ReturnUniqueNumbers()
+        {
+            var result = NumberGenerator.GenerateNumbers();
 
             Assert.That(result, Is.Unique);
         }

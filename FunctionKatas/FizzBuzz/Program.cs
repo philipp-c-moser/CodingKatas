@@ -8,9 +8,8 @@ namespace FizzBuzz
         {
             FizzBuzz fizzBuzz = new FizzBuzz();
             
-            var amount = Convert.ToInt32(Console.ReadLine());
 
-            var fizzBuzzString = fizzBuzz.ConvertNumbersToFizzBuzz(amount);
+            var fizzBuzzString = fizzBuzz.ConvertNumbersToFizzBuzz();
 
 
             foreach (var item in fizzBuzzString)

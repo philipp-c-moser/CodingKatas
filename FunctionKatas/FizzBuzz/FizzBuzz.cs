@@ -8,11 +8,11 @@ namespace FizzBuzz
     {
         
 
-        public List<string> ConvertNumbersToFizzBuzz(int amount)
+        public List<string> ConvertNumbersToFizzBuzz()
         {
             var fizzBuzzString = new List<string>();
 
-            foreach (var number in NumberGenerator.GenerateNumbers(amount))
+            foreach (var number in NumberGenerator.GenerateNumbers())
             {
                 fizzBuzzString.Add(ConvertNumberToFizzBuzz(number));
             }

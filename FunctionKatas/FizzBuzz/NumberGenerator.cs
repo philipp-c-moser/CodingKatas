@@ -8,9 +8,9 @@ namespace FizzBuzz
     public static class NumberGenerator
     {
 
-        public static IEnumerable<int> GenerateNumbers(int amount)
+        public static IEnumerable<int> GenerateNumbers()
         {
-            return Enumerable.Range(1, amount);
+            return Enumerable.Range(1, 100);
         }
 
 
