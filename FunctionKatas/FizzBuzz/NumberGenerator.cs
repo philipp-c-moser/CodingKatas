@@ -5,10 +5,10 @@ using System.Text;
 
 namespace FizzBuzz
 {
-    public class NumberGenerator
+    public static class NumberGenerator
     {
 
-        public IEnumerable<int> GenerateNumbers(int amount)
+        public static IEnumerable<int> GenerateNumbers(int amount)
         {
             return Enumerable.Range(1, amount);
         }

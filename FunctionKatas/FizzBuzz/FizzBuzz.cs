@@ -6,18 +6,13 @@ namespace FizzBuzz
 {
     public class FizzBuzz
     {
-        private NumberGenerator _numberGenerator;
-
-        public FizzBuzz()
-        {
-            _numberGenerator = new NumberGenerator();
-        }
+        
 
         public List<string> ConvertNumbersToFizzBuzz(int amount)
         {
             var fizzBuzzString = new List<string>();
 
-            foreach (var number in _numberGenerator.GenerateNumbers(amount))
+            foreach (var number in NumberGenerator.GenerateNumbers(amount))
             {
                 fizzBuzzString.Add(ConvertNumberToFizzBuzz(number));
             }
