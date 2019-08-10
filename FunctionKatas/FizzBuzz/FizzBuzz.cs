@@ -11,7 +11,7 @@ namespace FizzBuzz
 
         public static List<string> ConvertNumbersToFizzBuzz()
         {
-            return NumberGenerator.GenerateNumbers().Select(number => ConvertNumberToFizzBuzz(number)).ToList();
+            return NumberGenerator.GenerateNumbers().Select(ConvertNumberToFizzBuzz).ToList();
         }
 
 
