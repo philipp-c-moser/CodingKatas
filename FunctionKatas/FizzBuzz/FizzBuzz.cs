@@ -28,7 +28,7 @@ namespace FizzBuzz
 
         public string ConvertNumberToFizzBuzz(int number)
         {
-            if (IsFizz(number) && IsBuzz(number)) return "FizzBuzz";
+            if (IsFizzBuzz(number)) return "FizzBuzz";
             if (IsFizz(number)) return "Fizz";
             if (IsBuzz(number)) return "Buzz";
 
