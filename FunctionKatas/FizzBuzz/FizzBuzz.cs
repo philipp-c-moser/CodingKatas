@@ -28,21 +28,21 @@ namespace FizzBuzz
 
         public string ConvertNumberToFizzBuzz(int number)
         {
-            if (IsNumberDivisibleByThree(number) && IsNumberDivisibleByFive(number)) return "FizzBuzz";
-            if (IsNumberDivisibleByThree(number)) return "Fizz";
-            if (IsNumberDivisibleByFive(number)) return "Buzz";
+            if (IsFizz(number) && IsBuzz(number)) return "FizzBuzz";
+            if (IsFizz(number)) return "Fizz";
+            if (IsBuzz(number)) return "Buzz";
 
             return Convert.ToString(number);
         }
 
 
 
-        public bool IsNumberDivisibleByThree(int number)
+        public bool IsFizz(int number)
         {
             return number % 3 == 0;
         }
 
-        public bool IsNumberDivisibleByFive(int number)
+        public bool IsBuzz(int number)
         {
             return number % 5 == 0;
         }

@@ -33,7 +33,7 @@ namespace FizzBuzz.Test
         public void IsNumberDivisibleByThree_WhenPassNumberDivisbleByThree_ReturnTrue()
         {
 
-            var result = _fizzBuzz.IsNumberDivisibleByThree(_numberDivisibleByThree);
+            var result = _fizzBuzz.IsFizz(_numberDivisibleByThree);
 
             Assert.That(result, Is.True);
 
@@ -43,7 +43,7 @@ namespace FizzBuzz.Test
         public void IsNumberDivisibleByThree_WhenPassNumberNotDivisbleByThree_ReturnFalse()
         {
 
-            var result = _fizzBuzz.IsNumberDivisibleByThree(_numberDivisibleByFive);
+            var result = _fizzBuzz.IsFizz(_numberDivisibleByFive);
 
             Assert.That(result, Is.False);
 
@@ -54,7 +54,7 @@ namespace FizzBuzz.Test
         public void IsNumberDivisibleByFive_WhenPassNumberDivisbleByFive_ReturnTrue()
         {
 
-            var result = _fizzBuzz.IsNumberDivisibleByFive(_numberDivisibleByFive);
+            var result = _fizzBuzz.IsBuzz(_numberDivisibleByFive);
 
             Assert.That(result, Is.True);
 
@@ -64,7 +64,7 @@ namespace FizzBuzz.Test
         public void IsNumberDivisibleByThree_WhenPassNumberNotDivisbleByFive_ReturnFalse()
         {
 
-            var result = _fizzBuzz.IsNumberDivisibleByFive(_numberDivisibleByThree);
+            var result = _fizzBuzz.IsBuzz(_numberDivisibleByThree);
 
             Assert.That(result, Is.False);
 
@@ -75,8 +75,8 @@ namespace FizzBuzz.Test
         public void IsNumberDivisibleByThreeAndFive_WhenPassNumberDivisbleByThreeAndFive_ReturnTrue()
         {
 
-            var result = _fizzBuzz.IsNumberDivisibleByFive(_numberDivisibleByThreeAndFive) &&
-                         _fizzBuzz.IsNumberDivisibleByFive(_numberDivisibleByThreeAndFive);
+            var result = _fizzBuzz.IsBuzz(_numberDivisibleByThreeAndFive) &&
+                         _fizzBuzz.IsBuzz(_numberDivisibleByThreeAndFive);
 
             Assert.That(result, Is.True);
 
