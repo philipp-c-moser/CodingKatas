@@ -4,11 +4,11 @@ using System.Text;
 
 namespace FizzBuzz
 {
-    public class FizzBuzzHandler
+    public class FizzBuzz
     {
         private NumberGenerator _numberGenerator;
 
-        public FizzBuzzHandler()
+        public FizzBuzz()
         {
             _numberGenerator = new NumberGenerator();
         }

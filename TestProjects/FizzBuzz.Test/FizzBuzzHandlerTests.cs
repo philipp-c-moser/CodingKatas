@@ -8,7 +8,7 @@ namespace FizzBuzz.Test
     [TestFixture]
     class FizzBuzzHandlerTests
     {
-        private FizzBuzzHandler _fizzBuzzHandler;
+        private FizzBuzz _fizzBuzz;
 
         private int _numberDivisibleByThree;
         private int _numberDivisibleByFive;
@@ -18,7 +18,7 @@ namespace FizzBuzz.Test
         [SetUp]
         public void SetUp()
         {
-            _fizzBuzzHandler = new FizzBuzzHandler();
+            _fizzBuzz = new FizzBuzz();
 
             _numberDivisibleByThree = 36;
             _numberDivisibleByFive = 55;
@@ -33,7 +33,7 @@ namespace FizzBuzz.Test
         public void IsNumberDivisibleByThree_WhenPassNumberDivisbleByThree_ReturnTrue()
         {
 
-            var result = _fizzBuzzHandler.IsNumberDivisibleByThree(_numberDivisibleByThree);
+            var result = _fizzBuzz.IsNumberDivisibleByThree(_numberDivisibleByThree);
 
             Assert.That(result, Is.True);
 
@@ -43,7 +43,7 @@ namespace FizzBuzz.Test
         public void IsNumberDivisibleByThree_WhenPassNumberNotDivisbleByThree_ReturnFalse()
         {
 
-            var result = _fizzBuzzHandler.IsNumberDivisibleByThree(_numberDivisibleByFive);
+            var result = _fizzBuzz.IsNumberDivisibleByThree(_numberDivisibleByFive);
 
             Assert.That(result, Is.False);
 
@@ -54,7 +54,7 @@ namespace FizzBuzz.Test
         public void IsNumberDivisibleByFive_WhenPassNumberDivisbleByFive_ReturnTrue()
         {
 
-            var result = _fizzBuzzHandler.IsNumberDivisibleByFive(_numberDivisibleByFive);
+            var result = _fizzBuzz.IsNumberDivisibleByFive(_numberDivisibleByFive);
 
             Assert.That(result, Is.True);
 
@@ -64,7 +64,7 @@ namespace FizzBuzz.Test
         public void IsNumberDivisibleByThree_WhenPassNumberNotDivisbleByFive_ReturnFalse()
         {
 
-            var result = _fizzBuzzHandler.IsNumberDivisibleByFive(_numberDivisibleByThree);
+            var result = _fizzBuzz.IsNumberDivisibleByFive(_numberDivisibleByThree);
 
             Assert.That(result, Is.False);
 
@@ -75,8 +75,8 @@ namespace FizzBuzz.Test
         public void IsNumberDivisibleByThreeAndFive_WhenPassNumberDivisbleByThreeAndFive_ReturnTrue()
         {
 
-            var result = _fizzBuzzHandler.IsNumberDivisibleByFive(_numberDivisibleByThreeAndFive) &&
-                         _fizzBuzzHandler.IsNumberDivisibleByFive(_numberDivisibleByThreeAndFive);
+            var result = _fizzBuzz.IsNumberDivisibleByFive(_numberDivisibleByThreeAndFive) &&
+                         _fizzBuzz.IsNumberDivisibleByFive(_numberDivisibleByThreeAndFive);
 
             Assert.That(result, Is.True);
 
@@ -86,7 +86,7 @@ namespace FizzBuzz.Test
         [Test]
         public void ConvertNumberToFizzBuzz_PassNumberDivisibleByThree_ReturnFizz()
         {
-            var result = _fizzBuzzHandler.ConvertNumberToFizzBuzz(27);
+            var result = _fizzBuzz.ConvertNumberToFizzBuzz(27);
 
             Assert.That(result, Is.EqualTo("Fizz"));
         }
@@ -94,7 +94,7 @@ namespace FizzBuzz.Test
         [Test]
         public void ConvertNumberToFizzBuzz_PassNumberDivisibleByFive_ReturnBuzz()
         {
-            var result = _fizzBuzzHandler.ConvertNumberToFizzBuzz(25);
+            var result = _fizzBuzz.ConvertNumberToFizzBuzz(25);
 
             Assert.That(result, Is.EqualTo("Buzz"));
         }
@@ -102,7 +102,7 @@ namespace FizzBuzz.Test
         [Test]
         public void ConvertNumberToFizzBuzz_PassNumberDivisibleByThreeAndFive_ReturnFizzBuzz()
         {
-            var result = _fizzBuzzHandler.ConvertNumberToFizzBuzz(30);
+            var result = _fizzBuzz.ConvertNumberToFizzBuzz(30);
 
             Assert.That(result, Is.EqualTo("FizzBuzz"));
         }
@@ -110,7 +110,7 @@ namespace FizzBuzz.Test
         [Test]
         public void ConvertNumberToFizzBuzz_PassNumberNotDivisibleByThreeAndFive_ReturnNumberAsString()
         {
-            var result = _fizzBuzzHandler.ConvertNumberToFizzBuzz(11);
+            var result = _fizzBuzz.ConvertNumberToFizzBuzz(11);
 
             Assert.That(result, Is.EqualTo("11"));
         }

@@ -6,11 +6,11 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
-            FizzBuzzHandler fizzBuzzHandler = new FizzBuzzHandler();
+            FizzBuzz fizzBuzz = new FizzBuzz();
             
             var amount = Convert.ToInt32(Console.ReadLine());
 
-            var fizzBuzzString = fizzBuzzHandler.StartFizzBuzz(amount);
+            var fizzBuzzString = fizzBuzz.StartFizzBuzz(amount);
 
 
             foreach (var item in fizzBuzzString)
