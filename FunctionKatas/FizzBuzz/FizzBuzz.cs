@@ -47,5 +47,10 @@ namespace FizzBuzz
             return number % 5 == 0;
         }
 
+        public bool IsFizzBuzz(int number)
+        {
+            return IsFizz(number) && IsBuzz(number);
+        }
+
     }
 }
