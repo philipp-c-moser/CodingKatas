@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace FizzBuzz
@@ -10,14 +11,7 @@ namespace FizzBuzz
 
         public static List<string> ConvertNumbersToFizzBuzz()
         {
-            var fizzBuzzString = new List<string>();
-
-            foreach (var number in NumberGenerator.GenerateNumbers())
-            {
-                fizzBuzzString.Add(ConvertNumberToFizzBuzz(number));
-            }
-
-            return fizzBuzzString;
+            return NumberGenerator.GenerateNumbers().Select(number => ConvertNumberToFizzBuzz(number)).ToList();
         }
 
 
