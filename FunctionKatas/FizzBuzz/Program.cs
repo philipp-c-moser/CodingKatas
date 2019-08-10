@@ -18,9 +18,9 @@ namespace FizzBuzz
 
             var fizzBuzzString = fizzBuzzHandler.StartFizzBuzz(amount);
 
-            foreach (var fizzBuzz in fizzBuzzString)
+            foreach (var item in fizzBuzzString)
             {
-                Console.WriteLine(fizzBuzz);
+                Console.WriteLine(item);
             }
 
 
