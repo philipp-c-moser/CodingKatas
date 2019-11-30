@@ -6,7 +6,7 @@ namespace RingBuffer
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("RingBuffer - Class Kata");
         }
     }
 }
