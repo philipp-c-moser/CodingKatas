@@ -43,15 +43,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RussischeBauernmultiplikati
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RussischeBauernmultiplikation.Test", "TestProjects\RussischeBauernmultiplikation.Test\RussischeBauernmultiplikation.Test.csproj", "{09074527-21DA-411D-909A-D85133CB36F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecimalToRoman", "ClassKatas\DecimalToRoman\DecimalToRoman.csproj", "{ABB4834D-8E39-4E1C-B9FE-311793683054}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecimalToRoman", "ClassKatas\DecimalToRoman\DecimalToRoman.csproj", "{ABB4834D-8E39-4E1C-B9FE-311793683054}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DecimalToRoman", "DecimalToRoman", "{6C80FEBF-89C3-4061-875F-8891F6848C02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecimalToRoman.Test", "TestProjects\DecimalToRoman.Test\DecimalToRoman.Test.csproj", "{CC968D3D-8804-4BB6-8520-D9252E02A52D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecimalToRoman.Test", "TestProjects\DecimalToRoman.Test\DecimalToRoman.Test.csproj", "{CC968D3D-8804-4BB6-8520-D9252E02A52D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigToDictionary", "FunctionKatas\ConfigToDictionary\ConfigToDictionary.csproj", "{04AD3207-2C27-4A7B-BA59-B52721258425}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigToDictionary", "FunctionKatas\ConfigToDictionary\ConfigToDictionary.csproj", "{04AD3207-2C27-4A7B-BA59-B52721258425}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConfigToDictionary", "ConfigToDictionary", "{F395CC33-81E9-4C2C-8DAA-C9C59B86E140}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RingBuffer", "ClassKatas\RingBuffer\RingBuffer.csproj", "{AC57FFD3-3D35-4B48-AB04-2CF99E69D2DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RingBuffer", "RingBuffer", "{A80D08C6-62A7-4308-97AD-B9A0DE3DD583}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -115,6 +119,10 @@ Global
 		{04AD3207-2C27-4A7B-BA59-B52721258425}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04AD3207-2C27-4A7B-BA59-B52721258425}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04AD3207-2C27-4A7B-BA59-B52721258425}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC57FFD3-3D35-4B48-AB04-2CF99E69D2DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC57FFD3-3D35-4B48-AB04-2CF99E69D2DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC57FFD3-3D35-4B48-AB04-2CF99E69D2DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC57FFD3-3D35-4B48-AB04-2CF99E69D2DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -143,6 +151,8 @@ Global
 		{CC968D3D-8804-4BB6-8520-D9252E02A52D} = {6C80FEBF-89C3-4061-875F-8891F6848C02}
 		{04AD3207-2C27-4A7B-BA59-B52721258425} = {F395CC33-81E9-4C2C-8DAA-C9C59B86E140}
 		{F395CC33-81E9-4C2C-8DAA-C9C59B86E140} = {9FB8CE6C-CCE8-4C15-B29D-9877382E7F43}
+		{AC57FFD3-3D35-4B48-AB04-2CF99E69D2DF} = {A80D08C6-62A7-4308-97AD-B9A0DE3DD583}
+		{A80D08C6-62A7-4308-97AD-B9A0DE3DD583} = {986B03BF-2C45-4C87-8152-265E034A4A4E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {69D8148B-3850-4A70-A59C-2A3BC856F568}
