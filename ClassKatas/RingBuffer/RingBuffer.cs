@@ -7,6 +7,8 @@ namespace RingBuffer
     class RingBuffer<T>
     {
         private int size;
+        private int currentPosition = 0;
+
         private List<T> ringBufferValues = new List<T>();
 
         public RingBuffer(int size) {
@@ -15,7 +17,10 @@ namespace RingBuffer
 
         public void Add(T value)
         {
-            ringBufferValues.Add(value);
+            if(Count() < size)
+            {
+                ringBufferValues.Add(value);
+            }
         }
 
         public int Size()
@@ -23,6 +28,10 @@ namespace RingBuffer
             return this.size;
         }
 
+        public int Count()
+        {
+            return ringBufferValues.Count;
+        }
 
 
 
