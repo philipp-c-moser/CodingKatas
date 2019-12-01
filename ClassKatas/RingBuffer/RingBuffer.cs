@@ -7,7 +7,7 @@ namespace RingBuffer
     class RingBuffer<T>
     {
         private int size;
-        private int currentPosition = 0;
+        private int currentPosition = -1;
 
         private List<T> ringBufferValues = new List<T>();
 
@@ -16,10 +16,17 @@ namespace RingBuffer
         }
 
         public void Add(T value)
-        {
-            if(Count() < size)
+        {            
+            UpdateCurrentPosition();
+
+            if (Count() < size)
             {
                 ringBufferValues.Add(value);
+            }
+            else
+            {
+                ringBufferValues.Insert(currentPosition, value);
+                ringBufferValues.RemoveAt(size);
             }
         }
 
@@ -34,6 +41,21 @@ namespace RingBuffer
         }
 
 
+        #region HelperMethods
+
+        private void UpdateCurrentPosition()
+        {
+            if (currentPosition == size - 1)
+            {
+                currentPosition = 0;
+            } 
+            else
+            {
+                currentPosition++;
+            }
+        }
+
+        #endregion
 
     }
 }
